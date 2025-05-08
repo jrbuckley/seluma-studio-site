@@ -19,29 +19,49 @@
       text-align: center;
       padding: 0 1rem;
     }
+
+    .fade-in {
+        opacity: 0;
+        animation: fadeIn 2.5s ease-out forwards;
+        animation-delay: 0.3s;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to   { opacity: 1; }
+    }
+
     h1 {
       font-size: 2.5rem;
       margin-bottom: 0.5rem;
     }
+
     p {
       font-size: 1.1rem;
       max-width: 600px;
       margin-bottom: 1rem;
     }
+
     a {
       color: #38bdf8;
       text-decoration: none;
     }
+
     a:hover {
       text-decoration: underline;
     }
   </style>
 </head>
 <body>
-  <h1>Seluma Studio</h1>
-  <p style="font-style: italic; opacity: 0.85; max-width: 700px;">
-    Seluma Studio began during a period of reflection. I wanted to create in a way that felt honest, deliberate, and useful. There’s enough technology that distracts or harms. This space is for building the opposite.
-  </p>
-  <p>Website coming soon. In the meantime, visit <a href="https://jorgebuckley.com" target="_blank">jorgebuckley.com</a>.</p>
+  <div class="fade-in">
+    <h1>Seluma Studio</h1>
+    <p style="font-style: italic; opacity: 0.85; max-width: 700px;">
+      Seluma Studio began during a period of reflection. I wanted to create in a way that felt honest, deliberate, and useful. There’s enough technology that distracts or harms. This space is for building the opposite.
+    </p>
+    <p>
+      Website coming soon. In the meantime, visit
+      <a href="https://jorgebuckley.com" target="_blank">jorgebuckley.com</a>.
+    </p>
+  </div>
 </body>
 </html>
